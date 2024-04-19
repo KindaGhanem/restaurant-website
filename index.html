@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant</title>
+    <link rel="stylesheet" href="./assets/style/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Nanum+Myeongjo&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Nanum+Myeongjo&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Pacifico&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+      <nav class="navbar navbar-expand-lg bg-nav bg-main-col">
+        <div class="container">
+          <a class="navbar-brand main-text-color title" href="#">
+            <i class="fa-solid fa-utensils p-2"></i>
+            Jawhara</a>
+          <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav list d-flex justify-content-space-evenly align-item-center">
+              <li class="nav-item">
+                <a class="nav-link active main-text-color" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Service</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Menu</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle page" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Pages
+                </a>
+                <ul class="dropdown-menu bg-main-col">
+                  <li><a class="dropdown-item main-text-color" href="#">Action</a></li>
+                  <li><a class="dropdown-item main-text-color" href="#">Another action</a></li>
+                  <li><a class="dropdown-item main-text-color" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+            </ul>
+            <form>
+                <button class="button p-2">BOOK A TAPLE</button>
+            </form>
+          </div>
+      </nav>
+      <div class="hero">
+        <div class="container">
+            <div class="row">
+            <div class="col-lg-6 col-md-12 col-sm-12 sec1">
+                <h1 class="text-white title-enjoy">Enjoy Our Delicious Meal</h1>
+                <p class="text-white">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
+                <button class="button p-3">BOOK A TABLE</button>
+            </div>
+            <div class="col-lg-6 col-md-12 col-sm-12 sec2">
+                <img src="./assets/img/hero.png" width="500px" />
+            </div>
+        </div>
+      </div>
+    </div>
+    </header>
+    <main>
+        <section class="service container mt-5">
+            <div class="row container">
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="card">
+                        <div class="card-body">
+                          <i class="fa-solid fa-user fa-3x p-2 "></i>
+                          <h5 class="card-subtitle mb-2 p-2 fw-bold">Master Chef</h5>
+                          <p class="card-text p-2">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="card">
+                        <div class="card-body">
+                          <i class="fa-solid fa-utensils fa-3x p-2 "></i>
+                          <h5 class="card-subtitle mb-2 p-2 fw-bold">Master Chef</h5>
+                          <p class="card-text p-2 ">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="card">
+                        <div class="card-body">
+                          <i class="fa-solid fa-cart-shopping fa-3x p-2 "></i>
+                          <h5 class="card-subtitle mb-2 p-2 fw-bold ">Master Chef</h5>
+                          <p class="card-text p-2 ">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="card">
+                        <div class="card-body">
+                          <i class="fa-solid fa-headphones p-2 "></i>
+                          <h5 class="card-subtitle mb-2 p-2 fw-bold">Master Chef</h5>
+                          <p class="card-text p-2 ">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </section>
+        <section class="about-us container mt-5">
+            <div class="row">
+                <div class="col-lg-6 col-md-12 col-sm-12">
+                    <div>
+                        <div class="about-two-image">
+                            <img src="./assets/img/about-1.jpg" width="250" class="p-2" class="about-first-image">
+                            <img src="./assets/img/about-2.jpg" width="150" class="p-2" class="about-second-image">
+                        </div>
+                        <div class="about-two-image">
+                            <img src="./assets/img/about-3.jpg" width="150" class="p-2" class="about-second-image">
+                            <img src="./assets/img/about-4.jpg" width="250" class="p-2" class="about-first-image">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12 col-sm-12 about-two">
+                    <div>
+                        <h2 class="main-text-color second-font">About us</h2>
+                        <h3 class="fw-bold">Welcome to
+                            <i class="fa-solid fa-utensils main-text-color"></i>
+                            Jawhara
+                        </h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima soluta est vel ipsa ex deleniti ad cupiditate aperiam natus quam maiores, quibusdam vero architecto, consequuntur numquam obcaecati perspiciatis, explicabo doloremque.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima soluta est vel ipsa ex deleniti ad cupiditate aperiam natus quam maiores, quibusdam vero architecto, consequuntur numquam obcaecati perspiciatis, explicabo doloremque.</p>
+                        <div class="d-flex justify-content-space-between align-item-center flex-wrap price">
+                            <div class="num-years"><span class="main-text-color fw-bold" >15</span>
+                                Years of <strong>EXPERIENCE</strong></div>
+                            <div class="num-years"><span class="main-text-color fw-bold">50</span>
+                                Years of <strong>EXPERIENCE</strong></div>
+                        </div>
+                        <button class="button p-3 w-45">Read More</button>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="food">
+            <h1 class="second-font main-text-color">Food menu</h1>
+            <h2 class="fw-bold">Most Popular Items</h2>
+            <div class="d-flex justify-content-space-evenly align-item-center m-5 three-pr">
+                <i class="fa-solid fa-mug-saucer fa-2x text-main-color main-text-color"></i>
+                <p>Popular Breakfast</p>
+                <i class="fa-solid fa-bowl-food fa-2x text-main-color main-text-color"></i>
+                <p>Special Lunch</p>
+                <i class="fa-solid fa-utensils fa-2x text-main-color main-text-color"></i>
+                <p>Lovely Dinner</p>
+            </div>
+            <div class="row container">
+                <div class="col-lg-6 col-md-12 col-sm-12">
+                <div class="tall-card">
+                <div class="d-flex justify-content-space-evenly align-item-center col-card">
+                <div>
+                    <img src="./assets/img/about-1.jpg" width="100">
+                </div>
+                <div>
+                    <div class="chic-card">
+                        <h4 class="h4">Chicken Burger</h4>
+                        <p class="main-text-color fs-4">$115</p>
+                    </div>
+                    <p class="second-font">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias nesciunt harumm.</p>
+                </div>
+            </div>
+            <div class="d-flex justify-content-space-evenly align-item-center col-card">
+                <div>
+                    <img src="./assets/img/menu-1.jpg" width="100">
+                </div>
+                <div>
+                    <div class="chic-card">
+                        <h4 class="h4">Chicken Burger</h4>
+                        <p class="main-text-color fs-4">$115</p>
+                    </div>
+                    <p class="second-font">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias nesciunt harumm.</p>
+                </div>
+            </div>
+            <div class="d-flex justify-content-space-evenly align-item-center col-card">
+                <div>
+                    <img src="./assets/img/menu-2.jpg" width="100">
+                </div>
+                <div>
+                    <div class="chic-card">
+                        <h4 class="h4">Chicken Burger</h4>
+                        <p class="main-text-color fs-4">$115</p>
+                    </div>
+                    <p class="second-font">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias nesciunt harumm.</p>
+                </div>
+            </div>
+            <div class="d-flex justify-content-space-evenly align-item-center col-card">
+                <div>
+                    <img src="./assets/img/menu-3.jpg" width="100">
+                </div>
+                <div>
+                    <div class="chic-card">
+                        <h4 class="h4">Chicken Burger</h4>
+                        <p class="main-text-color fs-4">$115</p>
+                    </div>
+                    <p class="second-font">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias nesciunt harumm.</p>
+                </div>
+            </div>
+            <div class="d-flex justify-content-space-evenly align-item-center col-card">
+                <div>
+                    <img src="./assets/img/menu-3.jpg" width="100">
+                </div>
+                <div>
+                    <div class="chic-card">
+                        <h4 class="h4">Chicken Burger</h4>
+                        <p class="main-text-color fs-4">$115</p>
+                    </div>
+                    <p class="second-font">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias nesciunt harumm.</p>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="col-lg-6 col-md-12 col-sm-12">
+            <div class="tall-card">
+            <div class="d-flex justify-content-space-evenly align-item-center col-card">
+                <div>
+                    <img src="./assets/img/menu-4.jpg" width="100">
+                </div>
+                <div>
+                    <div class="chic-card">
+                        <h4 class="h4">Chicken Burger</h4>
+                        <p class="main-text-color fs-4">$115</p>
+                    </div>
+                    <p class="second-font">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias nesciunt harumm.</p>
+                </div>
+            </div>
+            <div class="d-flex justify-content-space-evenly align-item-center col-card">
+                <div>
+                    <img src="./assets/img/menu-5.jpg" width="100">
+                </div>
+                <div>
+                    <div class="chic-card">
+                        <h4 class="h4">Chicken Burger</h4>
+                        <p class="main-text-color fs-4">$115</p>
+                    </div>
+                    <p class="second-font">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias nesciunt harumm.</p>
+                </div>
+            </div>
+            <div class="d-flex justify-content-space-evenly align-item-center col-card">
+                <div>
+                    <img src="./assets/img/menu-6.jpg" width="100">
+                </div>
+                <div>
+                    <div class="chic-card">
+                        <h4 class="h4">Chicken Burger</h4>
+                        <p class="main-text-color fs-4">$115</p>
+                    </div>
+                    <p class="second-font">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias nesciunt harumm.</p>
+                </div>
+            </div>
+            <div class="d-flex justify-content-space-evenly align-item-center col-card">
+                <div>
+                    <img src="./assets/img/menu-7.jpg" width="100">
+                </div>
+                <div>
+                    <div class="chic-card">
+                        <h4 class="h4">Chicken Burger</h4>
+                        <p class="main-text-color fs-4">$115</p>
+                    </div>
+                    <p class="second-font">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias nesciunt harumm.</p>
+                </div>
+            </div>
+            <div class="d-flex justify-content-space-evenly align-item-center col-card">
+                <div>
+                    <img src="./assets/img/menu-8.jpg" width="100">
+                </div>
+                <div>
+                    <div class="chic-card">
+                        <h4 class="h4">Chicken Burger</h4>
+                        <p class="main-text-color fs-4">$115</p>
+                    </div>
+                    <p class="second-font">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias nesciunt harumm.</p>
+                </div>
+            </div>
+            </div>
+                </div>
+            </div>
+        </section>
+        <section class="mt-5 bg-main-col container-fluid ">
+            <div class="d-flex justify-content-center align-item-center flex-wrap">
+                <div class="col-lg-6 col-md-12 col-sm-12">
+                    <img src="./assets/img/single.jpg" class="form-img img-fluid" class="img-fluid">
+                </div>
+                <div class="col-lg-6 col-md-12 col-sm-12 bg-main-col title-form">
+                    <h1 class="second-font main-text-color">Restaurant</h1>
+                    <h2 class="text-white w-40">Book A Table Online</h2>
+                    <form class="form">
+                        <div>
+                            <input type="name" name="name" placeholder="name">
+                            <input type="email" name="email" placeholder="email">
+                        </div>
+                        <div>
+                            <input type="date" name="date">
+                            <select>
+                                <option>first meal</option>
+                                <option>second meal</option>
+                                <option>third meal</option>
+                            </select>
+                        </div>
+                        <textarea>your message</textarea>
+                        <button class="button mt-5">Send now</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <section class="food">
+            <h1 class="second-font main-text-color">The members</h1>
+            <h2>Our single chef</h2>
+            <div class="row container">
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="cards">
+                        <div class="card-body">
+                            <div class="image-area">
+                          <img src="./assets/img/single chef.jpg" width="200">
+                        </div>
+                          <h5 class="card-subtitle mb-2 p-2 fw-bold text-center">Full Name</h5>
+                          <p class="card-text p-2 text-center">Designation</p>
+                          <div class="chef-media d-flex justify-content-center align-item-center">
+                            <div class="media-item mx-2">
+                                <i class="fa-brands fa-facebook"></i>
+                            </div>
+                            <div class="media-item mx-2">
+                                <i class="fa-brands fa-twitter"></i>
+                            </div>
+                            <div class="media-item mx-2">
+                                <i class="fa-brands fa-instagram"></i>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="cards">
+                        <div class="card-body">
+                            <div class="image-area">
+                          <img src="./assets/img/team-2.jpg" width="200">
+                        </div>
+                          <h5 class="card-subtitle mb-2 p-2 fw-bold text-center">Full Name</h5>
+                          <p class="card-text p-2 text-center">Designation</p>
+                          <div class="chef-media d-flex justify-content-center align-item-center">
+                            <div class="media-item mx-2">
+                                <i class="fa-brands fa-facebook"></i>
+                            </div>
+                            <div class="media-item mx-2">
+                                <i class="fa-brands fa-twitter"></i>
+                            </div>
+                            <div class="media-item mx-2">
+                                <i class="fa-brands fa-instagram"></i>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="cards">
+                        <div class="card-body">
+                            <div class="image-area">
+                          <img src="./assets/img/team-3.jpg" width="200">
+                        </div>
+                          <h5 class="card-subtitle mb-2 p-2 fw-bold text-center">Full Name</h5>
+                          <p class="card-text p-2 text-center">Designation</p>
+                          <div class="chef-media d-flex justify-content-center align-item-center">
+                            <div class="media-item mx-2">
+                                <i class="fa-brands fa-facebook"></i>
+                            </div>
+                            <div class="media-item mx-2">
+                                <i class="fa-brands fa-twitter"></i>
+                            </div>
+                            <div class="media-item mx-2">
+                                <i class="fa-brands fa-instagram"></i>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="cards">
+                        <div class="card-body">
+                            <div class="image-area">
+                          <img src="./assets/img/team-4.jpg" width="200">
+                        </div>
+                          <h5 class="card-subtitle mb-2 p-2 fw-bold text-center">Full Name</h5>
+                          <p class="card-text p-2 text-center">Designation</p>
+                          <div class="chef-media d-flex justify-content-center align-item-center">
+                            <div class="media-item mx-2">
+                                <i class="fa-brands fa-facebook"></i>
+                            </div>
+                            <div class="media-item mx-2">
+                                <i class="fa-brands fa-twitter"></i>
+                            </div>
+                            <div class="media-item mx-2">
+                                <i class="fa-brands fa-instagram"></i>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+                </div>
+                <section class="food">
+                    <h1 class="second-font main-text-color">testimonial</h1>
+                    <h2>Our client Say!!!</h2>
+                    <div class="row container">
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <div class="card">
+                                <div class="card-body">
+                                    <i class="fa-solid fa-quote-left"></i>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, voluptatum!</p>
+                                    <div class="d-flex justify-content-start align-item-start under">
+                                        <img src="./assets/img//testimonial-2.jpg" width="50px">
+                                        <p class="ms-2">first client</p>
+                                    </div>
+                                </div>
+                              </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <div class="card">
+                                <div class="card-body">
+                                    <i class="fa-solid fa-quote-left"></i>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, voluptatum!</p>
+                                    <div class="d-flex justify-content-start align-item-start under">
+                                        <img src="./assets/img/testimonial-3.jpg" width="50px">
+                                        <p class="ms-2">second client</p>
+                                    </div>
+                                </div>
+                              </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <div class="card">
+                                <div class="card-body">
+                                    <i class="fa-solid fa-quote-left"></i>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, voluptatum!</p>
+                                    <div class="d-flex justify-content-start align-item-start under">
+                                        <img src="./assets/img/testimonial-4.jpg" width="50px">
+                                        <p class="ms-2">third client</p>
+                                    </div>
+                                </div>
+                              </div>
+                        </div>
+                        </div>
+                    </div>
+    </main>
+    <footer class="bg-main-col mt-5 d-flex justify-content-center align-item-center flex-column">
+        <div class="top-foot container">
+        <div class="row container border-bottom">
+            <div class="col-lg-3 col-md-12 col-sm-12">
+                <div class="footer-first">
+                    <h3 class="second-font main-text-color">company</h3>
+                    <ul>
+                        <li><a href="#"> > About us</a></li>
+                        <li><a href="#"> > Contact us</a></li>
+                        <li><a href="#"> > Reservation</a></li>
+                        <li><a href="#"> > Privacy Policy</a></li>
+                        <li><a href="#"> > Term & Condition</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-12 col-sm-12">
+            <div class="footer-first">
+                <h3 class="second-font main-text-color">contact</h3>
+                <ul>
+                    <li><a href="#">
+                        <i class="fa-solid fa-location-dot"></i>
+                        123 Street, New York, USA
+                    </a></li>
+                    <li><a href="#">
+                        <i class="fa-solid fa-phone"></i>
+                        +012 345 67890
+                    </a></li>
+                    <li><a href="#">
+                        <i class="fa-solid fa-envelope"></i>
+                        info@example.com
+                    </a></li>
+                    <div class="d-flex justify-content-space-evenly align-item-center social">
+                        <i class="fa-brands fa-twitter text-white me-2"></i>
+                        <i class="fa-brands fa-facebook text-white me-2"></i>
+                        <i class="fa-brands fa-square-youtube text-white me-2"></i>
+                        <i class="fa-brands fa-linkedin text-white me-2"></i>
+                    </div>
+                </ul>
+            </div>
+            </div>
+            <div class="col-lg-3 col-md-12 col-sm-12">
+            <div class="footer-first">
+                <h3 class="second-font main-text-color">opening</h3>
+                <ul>
+                    <li><a href="#">Monday - Saturday</a></li>
+                    <li><a href="#">09AM - 09PM</a></li>
+                    <li><a href="#">Sunday</a></li>
+                    <li><a href="#">10AM - 08PM</a></li>
+                </ul>
+            </div>
+            </div>
+            <div class="col-lg-3 col-md-12 col-sm-12">
+            <div class="footer-first">
+                <h3 class="second-font main-text-color">new letter</h3>
+                <ul>
+                    <li><a href="#">Dolor amet sit justo amet elitr clita ipsum elitr est</a></li>
+                </ul>
+                <form class="form-footer">
+                    <input type="email" placeholder="youremail">
+                    <button>SIGN UP</button>
+                </form>
+            </div>
+        </div>
+        </div>
+    </div>
+    <div class="under-footer container d-flex justify-content-space-between align-item-center flex-wrap">
+        <div>
+        <p class="text-white">© Your Site Name, All Right Reserved. Designed By HTML Codex</p>
+        <p class="mt-5 text-white paraghraph">Distributed By ThemeWagon</p>
+        </div>
+        <div>
+            <ul class="list-footer-tail d-flex justify-content-center align-item-center flex-wrap">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Cookies</a></li>
+                <li><a href="#">Help</a></li>
+                <li><a href="#">FQas</a></li>
+            </ul>
+        </div>
+    </div>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    
+</body>
+</html>
