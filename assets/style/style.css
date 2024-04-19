@@ -369,7 +369,7 @@
     
     }
     .hero .row .sec2 img{
-        width: 300px;
+        width: 256px;
     }
     .hero h1{
         font-size: 35px;
@@ -439,7 +439,6 @@
     }
     .about-two h2::after{
         left: 230px;
-
     }
     .tall-card .col-card{
         width: 100%;
